@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04E2EEDE5C218FBBBF92CA70 /* Pods_ClickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE69E22E806EC2A08BB51A30 /* Pods_ClickTime.framework */; };
+		504B74CF7A0B043AF01C9BED /* Pods_ClickTimeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CC94C8DCAC5AA9144037FC /* Pods_ClickTimeTests.framework */; };
+		C9157CAF1D4B7E3000008370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9157CAD1D4B7E3000008370 /* Main.storyboard */; };
+		C9157CB11D4B7E3000008370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9157CB01D4B7E3000008370 /* Assets.xcassets */; };
+		C9157CB41D4B7E3000008370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9157CB21D4B7E3000008370 /* LaunchScreen.storyboard */; };
+		C9157CCF1D4B7EEF00008370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9157CC91D4B7EEF00008370 /* AppDelegate.swift */; };
+		C9157CD01D4B7EEF00008370 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9157CCA1D4B7EEF00008370 /* Item.swift */; };
+		C9157CD11D4B7EEF00008370 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9157CCB1D4B7EEF00008370 /* ItemListViewController.swift */; };
+		C9157CD21D4B7EEF00008370 /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9157CCC1D4B7EEF00008370 /* ItemListViewModel.swift */; };
+		C9157CD31D4B7EEF00008370 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9157CCD1D4B7EEF00008370 /* ItemManager.swift */; };
+		C9157CD41D4B7EEF00008370 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9157CCE1D4B7EEF00008370 /* UITableViewCell+Extensions.swift */; };
+		C9157CD91D4B7FA400008370 /* ItemListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9157CD51D4B7FA400008370 /* ItemListViewControllerTests.swift */; };
+		C9157CDA1D4B7FA400008370 /* ItemListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9157CD61D4B7FA400008370 /* ItemListViewModelTests.swift */; };
+		C9157CDB1D4B7FA400008370 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9157CD71D4B7FA400008370 /* ItemManagerTests.swift */; };
+		C9157CDC1D4B7FA400008370 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9157CD81D4B7FA400008370 /* ItemTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9157CBB1D4B7E3000008370 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9157C9E1D4B7E3000008370 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9157CA51D4B7E3000008370;
+			remoteInfo = ClickTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26D4EE81D213454BCC9922F9 /* Pods-ClickTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickTime/Pods-ClickTime.debug.xcconfig"; sourceTree = "<group>"; };
+		BD9007A927CBCC6588F65C5E /* Pods-ClickTimeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickTimeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickTimeTests/Pods-ClickTimeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE69E22E806EC2A08BB51A30 /* Pods_ClickTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7CC94C8DCAC5AA9144037FC /* Pods_ClickTimeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickTimeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9157CA61D4B7E3000008370 /* ClickTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9157CAE1D4B7E3000008370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9157CB01D4B7E3000008370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9157CB31D4B7E3000008370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9157CB51D4B7E3000008370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9157CBA1D4B7E3000008370 /* ClickTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9157CC01D4B7E3000008370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9157CC91D4B7EEF00008370 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9157CCA1D4B7EEF00008370 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C9157CCB1D4B7EEF00008370 /* ItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
+		C9157CCC1D4B7EEF00008370 /* ItemListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
+		C9157CCD1D4B7EEF00008370 /* ItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
+		C9157CCE1D4B7EEF00008370 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		C9157CD51D4B7FA400008370 /* ItemListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTests.swift; sourceTree = "<group>"; };
+		C9157CD61D4B7FA400008370 /* ItemListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewModelTests.swift; sourceTree = "<group>"; };
+		C9157CD71D4B7FA400008370 /* ItemManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
+		C9157CD81D4B7FA400008370 /* ItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
+		D51C4BCA7AF50D3110D6903E /* Pods-ClickTimeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickTimeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickTimeTests/Pods-ClickTimeTests.release.xcconfig"; sourceTree = "<group>"; };
+		D611F2057203ED60A690C325 /* Pods-ClickTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickTime/Pods-ClickTime.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9157CA31D4B7E3000008370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E2EEDE5C218FBBBF92CA70 /* Pods_ClickTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9157CB71D4B7E3000008370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504B74CF7A0B043AF01C9BED /* Pods_ClickTimeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70ECB813D5AE3062264BE2B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE69E22E806EC2A08BB51A30 /* Pods_ClickTime.framework */,
+				C7CC94C8DCAC5AA9144037FC /* Pods_ClickTimeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9157C9D1D4B7E3000008370 = {
+			isa = PBXGroup;
+			children = (
+				C9157CA81D4B7E3000008370 /* ClickTime */,
+				C9157CBD1D4B7E3000008370 /* ClickTimeTests */,
+				C9157CA71D4B7E3000008370 /* Products */,
+				F22D4C651D104E5BEEDC40C6 /* Pods */,
+				70ECB813D5AE3062264BE2B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C9157CA71D4B7E3000008370 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9157CA61D4B7E3000008370 /* ClickTime.app */,
+				C9157CBA1D4B7E3000008370 /* ClickTimeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9157CA81D4B7E3000008370 /* ClickTime */ = {
+			isa = PBXGroup;
+			children = (
+				C9157CE11D4B890B00008370 /* Extensions */,
+				C9157CDE1D4B88F100008370 /* Models */,
+				C9157CE01D4B890000008370 /* ViewModels */,
+				C9157CDF1D4B88F900008370 /* Views */,
+				C9157CE21D4B891200008370 /* Storyboards */,
+				C9157CDD1D4B88E800008370 /* Supporting Files */,
+			);
+			path = ClickTime;
+			sourceTree = "<group>";
+		};
+		C9157CBD1D4B7E3000008370 /* ClickTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9157CE31D4B8EBF00008370 /* Views */,
+				C9157CE41D4B8ED400008370 /* ViewModels */,
+				C9157CE51D4B8EDF00008370 /* Models */,
+				C9157CC01D4B7E3000008370 /* Info.plist */,
+			);
+			path = ClickTimeTests;
+			sourceTree = "<group>";
+		};
+		C9157CDD1D4B88E800008370 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9157CC91D4B7EEF00008370 /* AppDelegate.swift */,
+				C9157CB01D4B7E3000008370 /* Assets.xcassets */,
+				C9157CB51D4B7E3000008370 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9157CDE1D4B88F100008370 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9157CCA1D4B7EEF00008370 /* Item.swift */,
+				C9157CCD1D4B7EEF00008370 /* ItemManager.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C9157CDF1D4B88F900008370 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9157CCB1D4B7EEF00008370 /* ItemListViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C9157CE01D4B890000008370 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C9157CCC1D4B7EEF00008370 /* ItemListViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		C9157CE11D4B890B00008370 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9157CCE1D4B7EEF00008370 /* UITableViewCell+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		C9157CE21D4B891200008370 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C9157CAD1D4B7E3000008370 /* Main.storyboard */,
+				C9157CB21D4B7E3000008370 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		C9157CE31D4B8EBF00008370 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9157CD51D4B7FA400008370 /* ItemListViewControllerTests.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C9157CE41D4B8ED400008370 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C9157CD61D4B7FA400008370 /* ItemListViewModelTests.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		C9157CE51D4B8EDF00008370 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9157CD71D4B7FA400008370 /* ItemManagerTests.swift */,
+				C9157CD81D4B7FA400008370 /* ItemTests.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F22D4C651D104E5BEEDC40C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26D4EE81D213454BCC9922F9 /* Pods-ClickTime.debug.xcconfig */,
+				D611F2057203ED60A690C325 /* Pods-ClickTime.release.xcconfig */,
+				BD9007A927CBCC6588F65C5E /* Pods-ClickTimeTests.debug.xcconfig */,
+				D51C4BCA7AF50D3110D6903E /* Pods-ClickTimeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9157CA51D4B7E3000008370 /* ClickTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9157CC31D4B7E3000008370 /* Build configuration list for PBXNativeTarget "ClickTime" */;
+			buildPhases = (
+				C4FCF8A50052CA17D3E53891 /* [CP] Check Pods Manifest.lock */,
+				C9157CA21D4B7E3000008370 /* Sources */,
+				C9157CA31D4B7E3000008370 /* Frameworks */,
+				C9157CA41D4B7E3000008370 /* Resources */,
+				42EEF45973D1530B0B705E8D /* [CP] Embed Pods Frameworks */,
+				0C6323963968C7904BD4ECCF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClickTime;
+			productName = ClickTime;
+			productReference = C9157CA61D4B7E3000008370 /* ClickTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9157CB91D4B7E3000008370 /* ClickTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9157CC61D4B7E3000008370 /* Build configuration list for PBXNativeTarget "ClickTimeTests" */;
+			buildPhases = (
+				F76D5D55DF8916D287D2E865 /* [CP] Check Pods Manifest.lock */,
+				C9157CB61D4B7E3000008370 /* Sources */,
+				C9157CB71D4B7E3000008370 /* Frameworks */,
+				C9157CB81D4B7E3000008370 /* Resources */,
+				513493D521161C687610914E /* [CP] Embed Pods Frameworks */,
+				80384768B013E9D0FF055F3B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9157CBC1D4B7E3000008370 /* PBXTargetDependency */,
+			);
+			name = ClickTimeTests;
+			productName = ClickTimeTests;
+			productReference = C9157CBA1D4B7E3000008370 /* ClickTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9157C9E1D4B7E3000008370 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Raphael Silva";
+				TargetAttributes = {
+					C9157CA51D4B7E3000008370 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					C9157CB91D4B7E3000008370 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C9157CA51D4B7E3000008370;
+					};
+				};
+			};
+			buildConfigurationList = C9157CA11D4B7E3000008370 /* Build configuration list for PBXProject "ClickTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9157C9D1D4B7E3000008370;
+			productRefGroup = C9157CA71D4B7E3000008370 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9157CA51D4B7E3000008370 /* ClickTime */,
+				C9157CB91D4B7E3000008370 /* ClickTimeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9157CA41D4B7E3000008370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9157CB41D4B7E3000008370 /* LaunchScreen.storyboard in Resources */,
+				C9157CB11D4B7E3000008370 /* Assets.xcassets in Resources */,
+				C9157CAF1D4B7E3000008370 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9157CB81D4B7E3000008370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C6323963968C7904BD4ECCF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickTime/Pods-ClickTime-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42EEF45973D1530B0B705E8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickTime/Pods-ClickTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		513493D521161C687610914E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickTimeTests/Pods-ClickTimeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80384768B013E9D0FF055F3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickTimeTests/Pods-ClickTimeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4FCF8A50052CA17D3E53891 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F76D5D55DF8916D287D2E865 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9157CA21D4B7E3000008370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9157CD01D4B7EEF00008370 /* Item.swift in Sources */,
+				C9157CD31D4B7EEF00008370 /* ItemManager.swift in Sources */,
+				C9157CD41D4B7EEF00008370 /* UITableViewCell+Extensions.swift in Sources */,
+				C9157CD21D4B7EEF00008370 /* ItemListViewModel.swift in Sources */,
+				C9157CCF1D4B7EEF00008370 /* AppDelegate.swift in Sources */,
+				C9157CD11D4B7EEF00008370 /* ItemListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9157CB61D4B7E3000008370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9157CDA1D4B7FA400008370 /* ItemListViewModelTests.swift in Sources */,
+				C9157CDB1D4B7FA400008370 /* ItemManagerTests.swift in Sources */,
+				C9157CD91D4B7FA400008370 /* ItemListViewControllerTests.swift in Sources */,
+				C9157CDC1D4B7FA400008370 /* ItemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9157CBC1D4B7E3000008370 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9157CA51D4B7E3000008370 /* ClickTime */;
+			targetProxy = C9157CBB1D4B7E3000008370 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9157CAD1D4B7E3000008370 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9157CAE1D4B7E3000008370 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9157CB21D4B7E3000008370 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9157CB31D4B7E3000008370 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9157CC11D4B7E3000008370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9157CC21D4B7E3000008370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9157CC41D4B7E3000008370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D4EE81D213454BCC9922F9 /* Pods-ClickTime.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ClickTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raphaelsilva.ClickTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9157CC51D4B7E3000008370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D611F2057203ED60A690C325 /* Pods-ClickTime.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ClickTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raphaelsilva.ClickTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C9157CC71D4B7E3000008370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD9007A927CBCC6588F65C5E /* Pods-ClickTimeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ClickTimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raphaelsilva.ClickTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClickTime.app/ClickTime";
+			};
+			name = Debug;
+		};
+		C9157CC81D4B7E3000008370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D51C4BCA7AF50D3110D6903E /* Pods-ClickTimeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ClickTimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raphaelsilva.ClickTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClickTime.app/ClickTime";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9157CA11D4B7E3000008370 /* Build configuration list for PBXProject "ClickTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9157CC11D4B7E3000008370 /* Debug */,
+				C9157CC21D4B7E3000008370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9157CC31D4B7E3000008370 /* Build configuration list for PBXNativeTarget "ClickTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9157CC41D4B7E3000008370 /* Debug */,
+				C9157CC51D4B7E3000008370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9157CC61D4B7E3000008370 /* Build configuration list for PBXNativeTarget "ClickTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9157CC71D4B7E3000008370 /* Debug */,
+				C9157CC81D4B7E3000008370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9157C9E1D4B7E3000008370 /* Project object */;
+}
